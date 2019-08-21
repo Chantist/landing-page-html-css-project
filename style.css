@@ -1,0 +1,251 @@
+ body * {
+     color: rgb(24, 59, 51);
+     font-family: Roboto, Segoe UI, Helvetica, sans-serif;
+     ;
+ }
+
+
+ #header {
+     z-index: 2;
+     display: flex;
+     align-items: center;
+     background-color: rgb(172, 236, 213);
+     height: 80px;
+     width: 100%;
+     position: fixed;
+     top: 0px;
+     left: 0px;
+     box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.1);
+ }
+
+
+ #header h1 {
+     font-family: 'Bungee', cursive;
+ }
+
+
+ #header-img {
+     background-color: rgb(172, 236, 213);
+     height: 40px;
+     width: 40px;
+     display: block;
+     margin-right: 10px;
+ }
+
+ #title {
+     color: rgb(96, 48, 107);
+     padding: 3px;
+     font-size: 40px;
+ }
+
+ #logo {
+     display: flex;
+     align-items: center;
+     margin-left: 100px;
+
+ }
+
+ #nav-bar {
+     position: absolute;
+     right: 50px;
+
+ }
+
+ .nav-link {
+     font-family: 'Bungee', cursive;
+     font-size: 16px;
+     padding: 8px;
+     margin: 0px 8px;
+     text-align: center;
+     border-radius: 3px;
+     border: none;
+     font-weight: bold;
+     background-color: rgb(172, 236, 213);
+ }
+
+ .bag {
+     color: rgb(96, 48, 107);
+     font-size: 25px;
+     padding: 8px;
+     margin-left: 8px;
+     text-align: center;
+ }
+
+ #promo {
+     font-family: 'Codystar', cursive;
+ }
+
+ #video-container {
+     width: 99vw;
+     background-color: black;
+     height: 500px;
+     margin: 85px -7px;
+     display: inline-flex;
+     align-items: center;
+ }
+
+ #video {
+     margin: 0 auto;
+     width: 70%;
+     height: 350px;
+ }
+
+ #product-container {
+     margin: 0 auto;
+     width: 70%;
+     display: grid;
+     grid-template-columns: 300px 300px 300px;
+     grid-template-rows: 500px;
+     grid-column-gap: 20px;
+ }
+
+ .product {
+     position: relative;
+     border-radius: 4px;
+     height: 400px;
+ }
+
+ .product-img {
+     border-radius: 4px;
+     max-width: 100%;
+     height: 80%;
+ }
+
+ .price {
+     border-radius: 4px;
+     padding: 1px 4px;
+     font-weight: bold;
+     text-align: center;
+     font-size: 18px;
+     color: black;
+     background-color: rgb(245, 225, 253);
+     font-family: 'Bungee', cursive;
+
+ }
+
+ .product-info {
+     font-weight: bold;
+     padding: 1px 4px;
+ }
+
+
+ #footer {
+     background: hsl(168, 12%, 96%);
+     position: relative;
+     margin: 0 auto;
+     width: 100%;
+     padding: 20px;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 1fr;
+     height: 150px;
+     border-top: .5px solid hsl(0, 0%, 85%);
+     border-bottom: .5px solid hsl(0, 0%, 85%);
+
+ }
+
+ #footer-info {
+     height: 100%;
+     width: 100%;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 20px;
+ }
+
+
+ #form {
+     margin: 0px auto;
+     text-align: center;
+     height: 150px;
+     padding-bottom: 20px;
+ }
+
+ h4 {
+     text-align: left;
+     line-height: 3px;
+ }
+
+ #email-input {
+     display: grid;
+     grid-template-columns: 200px 90px;
+     grid-template-rows: auto;
+     grid-column-gap: 25px;
+ }
+
+ #email {
+     height: auto;
+     padding: 4px;
+     width: 200px;
+ }
+
+ #submit {
+     display: inline-block;
+     border-radius: 2px;
+     padding: 4px;
+     font-size: 16px;
+     font-weight: bold;
+     background-color: rgb(245, 225, 253);
+     border: none;
+ }
+
+ #social-media {
+     display: flex;
+     align-items: center;
+     height: 115px;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ #footer a {
+     margin: 0px 20px 0px 20px;
+     text-decoration: none;
+ }
+
+ .icon {
+     font-weight: bold;
+     font-size: 38px;
+     margin-right: 3px;
+ }
+
+ .twitter-icon {
+     color: #1da1f2;
+ }
+
+ .twitter-icon {
+     color: #1da1f2;
+ }
+
+ .facebook-icon {
+     color: #385898;
+ }
+
+ .instagram-icon {
+     color: transparent;
+     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+     background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+     background-clip: text;
+     -webkit-background-clip: text;
+ }
+
+ #copyright {
+     font-weight: bold;
+     margin: -15px auto;
+     width: 25%;
+ }
+
+
+ /* --------------------Media Query Below------------ */
+
+
+ @media(max-width : 1125px) {
+
+     #product-container {
+         grid-template-columns: 250px 250px 250px;
+     }
+
+     .product {
+         height: 350px;
+     }
+
+ }
